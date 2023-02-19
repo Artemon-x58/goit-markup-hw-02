@@ -3,11 +3,18 @@
 	--main-accent-color: #404bbf;
 	--secondary-accent-color: #4d5ae5;
 	--background-color-gray: #2e2f42;
+	--secondary-title-color: #2e2f42;
+	--main-color-hero: #ffffff;
+	--background-btn: #e7e9fc;
+	--section-team-background: #f4f4fd;
+	--footer-logo: #f4f4fd;
+	--footer-text: #e7e9fc;
+	--btn-hover-focus: #ffffff;
 }
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
-	line-height: 1.5;
+
 	color: #434455;
 }
 
@@ -64,17 +71,16 @@ body {
 
 /* ----------------------------Header--------------------------- */
 .header {
-	background: #ffffff;
 }
 .header-navigation {
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--secondary-title-color);
 }
 
 .header-logo {
-	color: #2e2f42;
+	color: var(--secondary-title-color);
 }
 
 .header-logo > span {
@@ -89,7 +95,7 @@ body {
 	font-weight: 500;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #2e2f42;
+	color: var(--secondary-title-color);
 }
 .header-link:hover,
 .header-link:focus {
@@ -103,7 +109,7 @@ body {
 	font-style: normal;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
-	color: #434455;
+	color: inherit;
 }
 
 .header-mail:hover,
@@ -129,10 +135,10 @@ body {
 	line-height: 1.07;
 	text-align: center;
 	letter-spacing: 0.02em;
-	color: #ffffff;
+	color: var(--main-color-hero);
 }
 .hero-btn {
-	color: #ffffff;
+	color: var(--main-color-hero);
 	background-color: var(--secondary-accent-color);
 }
 .hero-btn:hover,
@@ -177,6 +183,7 @@ body {
 /* ----------------------------Our team--------------------------- */
 
 .team {
+	background-color: var(--section-team-background);
 }
 .team-title {
 	font-weight: 700;
@@ -203,7 +210,7 @@ body {
 	background: var(--background-color-gray);
 }
 .footer-text {
-	color: #e7e9fc;
+	color: var(--footer-text);
 }
 .footer-logo {
 	font-family: "Raleway", sans-serif;
@@ -212,7 +219,7 @@ body {
 	line-height: 1.33;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: #f4f4fd;
+	color: var(--footer-logo);
 }
 
 .footer-logo > span {
@@ -230,12 +237,12 @@ body {
 }
 .filtr-btn {
 	color: var(--secondary-accent-color);
-	background-color: #e7e9fc;
+	background-color: var(--background-btn);
 }
 
 .filtr-btn:hover,
 .filtr-btn:focus {
-	color: #ffffff;
+	color: var(--btn-hover-focus);
 	background-color: var(--main-accent-color);
 }
 
